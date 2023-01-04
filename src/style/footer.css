@@ -56,3 +56,28 @@
     margin-bottom: 0px;
     padding-bottom: 15px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 192%;
+    }
+    .footer_kasa {
+        margin-top: 0px;
+    }
+
+    .footer_img {
+        margin-top: 40px;
+    }
+
+    .footer_k {
+        margin-top: 15px;
+    }
+
+    .footer_s {
+        margin-top: 25px;
+    }
+
+    .footer_a {
+        margin-top: 25px;
+    }
+}

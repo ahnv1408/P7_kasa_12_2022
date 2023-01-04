@@ -4,3 +4,11 @@
     margin-left: 70px;
     border-radius: 25px;
 }
+
+@media screen and (max-width: 768px) {
+
+    .background_apropos {
+        width: 100%;
+        margin-left: 0;
+    }
+}

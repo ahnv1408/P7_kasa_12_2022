@@ -3,6 +3,7 @@ import './index.css';
 import './style/app.css';
 import Home from './pages/Home';
 import Apropos from './pages/Apropos';
+import Logement from './components/Collapse';
 import { Routes, Route } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 
@@ -13,18 +14,13 @@ function App() {
      
       <Routes>
 
-          <Route path="/" element={<Home />} />
-        
-          <Route path="/apropos" element={<Apropos />} />
-         
-          {/* <Route path="/lodgment/:id" element={<Lodgment />} /> */}
+          <Route path="/" element={<Home />} />        
+          <Route path="/apropos" element={<Apropos />} />         
+          <Route path="/logement/:id" element={<Logement />} />
           <Route path="*" element={<NotFound />} /> 
 
       </Routes>
-
     </>
-
-
   );
 }
 

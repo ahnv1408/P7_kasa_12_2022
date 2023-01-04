@@ -1,21 +1,23 @@
 import React from 'react';
 import '../style/cards.css';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Cards(props) {
     const productsList = props.productsList;
     return (
-        <article className='cards'>{
+        <section className='cards'>{
             productsList.map((product) =>
             <>
-                <NavLink to= {`products/${product.id}`} key= {product.id} className={({ isActive }) => (isActive ? "activeLink" : undefined)}>
-                    <img src={product.cover} alt='location'/>
-                    <div>
-                        <p className='p_cards'>{product.title}</p>
-                    </div>
-                </NavLink>
+                <Link to= {`/products/${product.id}`} key= {product.id} className='card'>
+                    <article className='article_cards'>
+                        <img src={product.cover} alt='location'/>
+                        <div className='layer_cards'>
+                            <p className='p_cards'>{product.title}</p>
+                        </div>
+                    </article>
+                </Link>
             </>
-        )}</article>
+        )}</section>
     )
 }
 export default Cards;

@@ -2,6 +2,7 @@ import '../style/app.css';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 import productsList from '../products/products.json';
 
 
@@ -10,19 +11,21 @@ function Home() {
     <>
       <Header />
       <Banner />
+      {/* <main>
+        <Cards/>
+      </main> */}
       <article className='cards'>{
             productsList.map((product) =>
             <>
-                <div className="container_card">
+                <Link  to={`logement/${product.id}`} key={product.id} className="container_card">
                     <img src={product.cover} alt='location'/>
-                    <div>
+                    <div className='layer_cards'>
                         <p className='p_cards'>{product.title}</p>
                     </div>
-                </div>
+                </Link>
             </>
         )}</article>
       <Footer />
-
     </>
   );
 }
