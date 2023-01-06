@@ -3,11 +3,12 @@ import left from "../assets/left.png";
 import right from "../assets/right.png";
 import { useParams } from "react-router-dom";
 import "../style/caroussel.css";
-import productsList from '../products/products.json';
+
 
 export default function Caroussel(props) {
 
     const productsList = props.productsList;
+    console.log(productsList);
     const urlParams = useParams();
     console.log(urlParams);
     const productsData = productsList.filter((product) => product.id === urlParams.id);
@@ -23,6 +24,7 @@ export default function Caroussel(props) {
     const prevSlide = () => {
         setCurrent(current === 0 ? arrayLength - 1 : current - 1);
     };
+
 
     return (
         <>
