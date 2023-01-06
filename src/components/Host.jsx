@@ -1,13 +1,18 @@
 import '../style/host.css';
+import React from 'react';
 
-// function Host (props) {
-//     const productsList = props.productsList;
-//     return (
-//         <div className="host">{
-//             productsList.map((product) =>
-//             <h1>{product.title}</h1>
-//             <img src={product.picture}
-//             )}
-//        </div>
-//     )
-// }
+function Host({host}) {
+    // const host = props.host;
+    return (
+        <>
+        <div className="host">            
+            <p className='name'>{host.name}</p>
+            <img src={host.picture} alt={host.name} className="host_picture"/>            
+        </div>
+        </>
+    );
+}
+
+export default Host;
+
+
