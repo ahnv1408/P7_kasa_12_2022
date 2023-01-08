@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
+
+.tags {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.lodgment_name {
+    color: #FF6060;
+    font-weight: 500;
+    line-height: 52px;
+}
+
+.lodgment_location {
+    color: #FF6060;
+    font-weight: 500;
+}
+
+.lodgment_tag {
+    background-color: #FF6060;
+    color: white;
+    margin-right: 25px;
+}
