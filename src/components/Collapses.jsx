@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import up from '../assets/up.webp';
+import '../style/collapses.css';
 
 // import down from '../assets/down.webp';
 
@@ -20,14 +21,14 @@ function Collapses(props) {
                 props.collapseInformation.map((info) => 
                 <>
                     <section>
-                        <div className="title">                                              
-                            <h2>{info.title}</h2>                                               
+                        <div className="collapse_title">                                              
+                            <h2 className="title">{info.title}</h2>                                               
                                                 
-                            <p onClick={display}>{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
+                            <p className="icon" onClick={display}>{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
                              
                         </div>
-                        <div className="description">
-                            {visible && <p>{info.description}</p>}
+                        <div className="collapse_description">
+                            {visible && <p className="info_description">{info.description}</p>}
                         </div>
                     </section>
                 </>

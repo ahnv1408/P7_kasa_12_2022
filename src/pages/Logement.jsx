@@ -19,15 +19,15 @@ function Logement () {
    
    
    
-//     const [product, setProduct] = useState([]);
-//     const url = 'http://localhost:3000/products/products.json'
-//     useEffect(()=>{
-//         axios.get(`${url}`)
-//         .then(response => setProduct(response.data))
-//         .catch(err => console.log(err))
-//       },[]);
-//    const lodgmentId = window.location.pathname.substring(10);
-//    const lodgment = product.find((item) => item.id === lodgmentId);
+    const [product, setProduct] = useState([]);
+    const url = 'http://localhost:3000/products/products.json'
+    useEffect(()=>{
+        axios.get(`${url}`)
+        .then(response => setProduct(response.data))
+        .catch(err => console.log(err))
+      },[]);
+   const lodgmentId = window.location.pathname.substring(10);
+   const lodgment = product.find((item) => item.id === lodgmentId);
 //    if(!lodgment) return <NotFound/>
 
     return (

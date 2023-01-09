@@ -11,7 +11,7 @@ function Tags(props) {
                 <>
                 <h1 className="lodgment_name">{product.title}</h1>
                 <p className="lodgment_location">{product.location}</p>
-                <ul>
+                <ul className='list_tags'>
                     <li className="lodgment_tag" key={product.tags}>{product.tags}</li>           
                 </ul>
                 </>)

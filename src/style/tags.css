@@ -9,15 +9,31 @@
     color: #FF6060;
     font-weight: 500;
     line-height: 52px;
+    margin-bottom: 0px;
 }
 
 .lodgment_location {
     color: #FF6060;
     font-weight: 500;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.list_tags {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 .lodgment_tag {
     background-color: #FF6060;
     color: white;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    height: 25px; 
     margin-right: 25px;
+    border-radius: 5px;
+    padding: 10px;
 }
