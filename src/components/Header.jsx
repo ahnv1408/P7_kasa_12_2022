@@ -16,7 +16,7 @@ import { NavLink } from "react-router-dom";
                 <div>
                     <ul className='links'>
                         <li className='link1'><NavLink to="/" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>Accueil</NavLink></li>
-                        <li><NavLink to="/apropos" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
+                        <li className='link2'><NavLink to="/apropos" className={({ isActive }) => (isActive ? "activeLink" : undefined)}>A propos</NavLink></li>
                     </ul>
                 </div>
             </nav>

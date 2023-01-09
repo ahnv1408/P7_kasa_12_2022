@@ -6,7 +6,10 @@ function Banner() {
     return (
         <article>
             <img src={background} alt='paysage' className='paysage'/>
-            <p className='p_paysage'>Chez vous, partout et ailleurs</p>
+            <div className="paysage_dispo">
+                <p className='p_paysage'>Chez vous,</p>
+                <p className='p_paysage_deux'>partout et ailleurs</p>
+            </div>
          </article>
     )
 

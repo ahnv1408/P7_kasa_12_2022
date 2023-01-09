@@ -1,17 +1,18 @@
 
 import React from 'react';
+import '../style/host.css';
 
-function Host(props) {
+function Host({product}) {
    
-    console.log(props.productsList.host);
-    // return (
-    //     <>
-    //     <div className="host">            
-    //         <p className='name'>{host.name}</p>
-    //         <img src={host.picture} alt={host.name} className="host_picture"/>            
-    //     </div>
-    //     </>
-    // );
+    
+    return (
+        <>
+        <div className="host">            
+            <p className='host_name'>{product.host.name}</p>
+            <img src={product.host.picture} alt={product.host.name} className="host_picture"/>            
+        </div>
+        </>
+    );
 }
 
 export default Host;

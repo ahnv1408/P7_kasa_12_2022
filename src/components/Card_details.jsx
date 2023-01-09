@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../style/cards.css';
 
 const Card_details = (props) => {
     console.log(props.product.title);

@@ -8,7 +8,8 @@
 @media screen and (max-width: 768px) {
 
     .background_apropos {
-        width: 100%;
-        margin-left: 0;
+        width: 680px;
+        height: 400px;
+        margin-left: 20px;
     }
 }

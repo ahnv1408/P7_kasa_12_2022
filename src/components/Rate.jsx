@@ -4,8 +4,9 @@ import '../style/rate.css';
 import { ReactComponent as Star } from '../assets/vide.svg';
 import React from "react";
 
-function Rate(props) {   
-    console.log(props.productsList[0].rating);
+function Rate({product}) {  
+  console.log({product}); 
+   
     const stars = [1, 2, 3, 4, 5];
     // return (
     //     <div className="rating">
@@ -18,16 +19,27 @@ function Rate(props) {
     //         })}
     //     </div>
     // )
+  
     return (
+      // <div className="rating">
+      //   {stars.map((level) =>
+      //   props.productsList.map((product) =>
+      //   product.rating >= level ? (
+      //       <img className="starColors" src={starColors} alt=""/>
+      //   ) : (
+      //       <img className="starWhite" src={starWhite} alt=""/>
+      //  ) ))}
+      // </div>
+      
       <div className="rating">
-        {stars.map((level) =>
-        props.productsList.map((product) =>
-        product.rating >= level ? (
-            <img className="starColors" src={starColors} alt=""/>
-        ) : (
-            <img className="starWhite" src={starWhite} alt=""/>
-       ) ))}
-      </div>
+      {stars.map((level) =>
+     
+      product.rating >= level ? (
+          <img className="starColors" src={starColors} alt=""/>
+      ) : (
+          <img className="starWhite" src={starWhite} alt=""/>
+     ) )}
+    </div>
     );
 
 

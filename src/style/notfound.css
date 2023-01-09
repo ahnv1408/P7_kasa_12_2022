@@ -23,3 +23,20 @@
     margin-bottom: 75px;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+
+    .error {
+        width: 600px;
+        margin-top: 200px;
+    }
+
+    .numero {
+        font-size: 96px;
+        font-weight: 900;
+    }
+
+    .oups {
+        font-size: 18px;
+    }
+}

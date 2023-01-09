@@ -68,6 +68,10 @@ a {
     position: relative;
 }
 
+.paysage_dispo {
+    display: flex;
+}
+
 .p_paysage {
     z-index: 1;
     position: absolute;
@@ -78,15 +82,40 @@ a {
     font-size: 48px;
 }
 
+.p_paysage_deux {
+    z-index: 1;
+    position: absolute;
+    top: 240px;
+    left: 885px;
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+}
+        /* MOBILE */
 @media screen and (max-width: 768px) {
 
-    .navbar {
+    /* .navbar {
         width: 100%;
+    } */
+    .K {
+        margin-bottom: 20px;
+    }
+
+    .SA {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin-left: 5px;
+        margin-bottom: 20px;
     }
 
     .links {
-        margin-right: 0px;
+        margin-right: 20px;
         margin-left: 50px;
+    }
+    .link2 {
+        margin-left: 25px;
     }
 
     .paysage {
@@ -98,11 +127,32 @@ a {
         margin-right: 20px;
     }
 
+    .paysage_dispo {
+        flex-wrap: wrap;
+    }
+
     .p_paysage {
+        top: 250px;
+        left: 100px;
+        width: 617px;
+        height: 30px;
+        margin: 0px;
+    }
+
+    .p_paysage_deux {
         top: 300px;
         left: 100px;
         width: 617px;
         height: 30px;
         margin: 0px;
+    }
+}
+
+            /* TABLETTE */
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+       display: flex;
+       justify-content: space-between;
     }
 }

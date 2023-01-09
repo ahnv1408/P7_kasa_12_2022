@@ -1,42 +1,45 @@
 
-import { ReactComponent as Up} from "./left.svg";
-import { ReactComponent as Down} from "./right.svg";
+import { ReactComponent as Left} from "./left.svg";
+import { ReactComponent as Right} from "./right.svg";
+// import Carousel from "react-elastic-carousel";
+// import { Carousel } from 'react-responsive-carousel';
 import { useParams } from "react-router-dom";
 import React,{useState, useEffect} from "react";
 import axios from "axios";
-// import "../style/caroussel.css";
+import "../../style/caroussel.css";
 
 
-export default function Caroussel(props) {
+export default function Caroussel({product}) {
 
-  console.log(props.productId);
 
-  //   const [slide, setSlide] = useState(0)
-  //   const arrayLenght = props.productsList.flatMap(el => el.pictures).length;
+     const [slide, setSlide] = useState(0)
+    //  const arrayLenght = props.productsList.flatMap(el => el.pictures).length;
+    const arrayLenght = product.flatMap(el => el.pictures).length;
+     console.log(arrayLenght);
   
-  //   function prevSlide() {
-  //     let newSlide = slide === 0 ? arrayLenght - 1 : slide - 1;
-  //     setSlide(newSlide);
-  //   }
-  //   function nextSlide() {
-  //     let newSlide = slide === arrayLenght - 1 ? 0 : slide + 1;
-  //     setSlide(newSlide);
-  //   }
-  //   return (
-  //     <section className="collapse_container">
-  //       <div className="collapse_navigation">
-  //         <Up className="prev" onClick={() => {prevSlide()}} />
-  //         <Down className="next" onClick={() => {nextSlide()}} />
-  //       </div>
-  //       {props.productsList.map((product) => {
-  //         return (
-  //           <img src={product.picture} alt="" />
-  //         )
-  //       })}
-  //       <div className="collapse_text">{slide + 1}/{props.productsList.length}</div>
-  //     </section>
-  //  ) }
-}
+     function prevSlide() {
+       let newSlide = slide === 0 ? arrayLenght - 1 : slide - 1;
+       setSlide(newSlide);
+     }
+     function nextSlide() {
+       let newSlide = slide === arrayLenght - 1 ? 0 : slide + 1;
+       setSlide(newSlide);
+     }
+     return (
+       <section className="caroussel_container">
+         <div className="caroussel_navigation">
+           <Left className="prev" onClick={() => {prevSlide()}} />
+           <Right className="next" onClick={() => {nextSlide()}} />
+         </div>
+         {product.map((ele) => {
+           return (
+             <img src={ele.picture} alt="" />
+           )
+         })}
+         <div className="caroussel_text">{slide + 1}/{arrayLenght}</div>
+       </section>
+    ) }
+
 
   //  className={i === slide ? "visible_img" : "hide_img"}
 
