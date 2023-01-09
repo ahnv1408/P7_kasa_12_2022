@@ -6,6 +6,8 @@ import Header from '../components/Header';
 import Tags from "../components/Tags";
 import Rate from "../components/Rate";
 import Host from "../components/Host";
+import Collapses from "../components/Collapses";
+import Description from "../components/Description";
 import productsList from "../products/products.json";
 import Caroussel from '../components/Caroussel/Caroussel';
 
@@ -40,7 +42,7 @@ function Logement () {
          
        
             <Header />           
-             {/* <Caroussel product={product}/>     */}
+             <Caroussel product={product}/>    
             <div className="tags_host_rate">
                 <div className="tags">
                     <Tags product={product}/>
@@ -50,6 +52,10 @@ function Logement () {
                     <Rate product={product}/> 
                 </div>
             </div>
+            <div className="description">
+                <Description product={product}/>
+            </div>
+
 
             </>
       

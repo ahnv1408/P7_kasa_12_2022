@@ -1,0 +1,28 @@
+.caroussel {
+    height: 500px;
+    margin-right: 20px;
+}
+
+.caroussel_img {
+    width: 95%;
+    object-fit: cover;
+    height: 500px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icons_situation {
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+    position: absolute;
+    color: red;
+    font-size: 50px;
+}
+
+.right {
+    position: absolute;
+    color: red;
+    font-size: 50px;
+}

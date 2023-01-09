@@ -9,7 +9,7 @@ import '../style/collapses.css';
 
 
 function Collapses(props) {
-    console.log(props.collapseInformation[0]);
+    
     const [ visible, setVisible ] = useState (false);
     const display=() => {
         setVisible(!visible);
