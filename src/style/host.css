@@ -3,7 +3,6 @@
 .host {
     display: flex;
     flex-direction: row;
-
     margin-bottom: 20px;
     margin-right: 80px;
 }
@@ -19,4 +18,18 @@
 
 .host_picture {
     border-radius: 90px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .host {
+        margin-right: 20px;
+        margin-left: 150px;
+    }
+
+    .host_picture {
+        width: 150px;
+        height: 150px;
+        border-radius: 110px;
+    }
 }

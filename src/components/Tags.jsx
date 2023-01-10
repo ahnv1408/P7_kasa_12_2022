@@ -2,7 +2,7 @@ import '../style/tags.css';
 
 
 function Tags({product}) {
-    console.log({product});
+    console.log(product.tags);
     return (
         <div className="tags">    
             <>
@@ -11,11 +11,12 @@ function Tags({product}) {
                 <p className="lodgment_location">{product.location}</p>
                 <div className='tag_container'>
                     {product.tags.map((el) =>
-                 
-                    <span className='lodgment_tag'>{el.tags}</span>
-                    
-                    )}                      
-                </div>                        
+                   
+                    <span className='lodgment_tag'>{el}</span>
+                       
+                    )}   
+                    </div>                    
+                                   
               
             </>        
     </div>

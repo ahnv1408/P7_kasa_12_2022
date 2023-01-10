@@ -11,6 +11,7 @@
     object-fit: cover;
     height: 500px;
     position: relative;
+    margin-top: 60px;
     margin-left: 350px;
     border-radius: 10px;
 }
@@ -32,4 +33,23 @@
     font-size: 100px;
     right: 5px;
     top: 170px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .carousel {
+        height: 300px;
+    }
+    .caroussel_img {
+        width: 610px;
+        height: 300px;
+        margin-left: 50px;
+    }
+
+    .left {
+        top: 85px;
+    }
+    .right {
+        top: 85px;
+    }
 }

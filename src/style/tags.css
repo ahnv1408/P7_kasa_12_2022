@@ -3,6 +3,7 @@
 .tags {
     font-family: 'Montserrat', sans-serif;    
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .lodgment_name {
@@ -38,3 +39,4 @@
     border-radius: 5px;
     padding: 10px;
 }
+

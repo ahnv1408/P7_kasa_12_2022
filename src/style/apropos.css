@@ -14,9 +14,13 @@
 
 @media screen and (max-width: 768px) {
 
+    .background {
+        width: 600px;
+    }
+
     .background_apropos {
         width: 680px;
-        height: 400px;
-        margin-left: 20px;
+        height: 300px;
+        margin: 0;
     }
 }
