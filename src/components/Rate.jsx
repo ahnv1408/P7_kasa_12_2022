@@ -7,11 +7,8 @@ function Rate({product}) {
   console.log({product}); 
    
     const stars = [1, 2, 3, 4, 5];
-
   
-    return (
-
-      
+    return (      
       <div className="rating">
       {stars.map((level) =>
      

@@ -12,9 +12,7 @@ function Description({product}) {
         setVisible(!visible);
     }
     return (
-    // <Collapses title= "Description" content={product.description} />
-    <div className="collapses">  
-        
+    <div className="collapses">          
         <>
             <section className="collapse_style_des">
                 <div className="collapse_title_log">                                              
@@ -46,8 +44,7 @@ function Description({product}) {
                     </ul>
                 </div>
             </section>
-        </>
-        
+        </>       
     
 </div>
     )
