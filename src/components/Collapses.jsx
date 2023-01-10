@@ -21,10 +21,10 @@ function Collapses(props) {
                 props.collapseInformation.map((info) => 
                 <>
                     <section>
-                        <div className="collapse_title">                                              
+                        <div className="collapse_title" >                                              
                             <h2 className="title">{info.title}</h2>                                               
                                                 
-                            <p className="icon" onClick={display}>{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
+                            <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
                              
                         </div>
                         <div className="collapse_description">

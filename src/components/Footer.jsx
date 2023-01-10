@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../assets/Group.webp';
+import logo from '../assets/logofooter.png';
 import '../style/footer.css';
 
 export default function Footer() {

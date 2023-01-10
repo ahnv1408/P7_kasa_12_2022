@@ -1,14 +1,16 @@
-.caroussel {
-    height: 500px;
+.carousel {
+    height: 600px;
     margin-right: 20px;
+ 
 }
 
 .caroussel_img {
-    width: 95%;
+    width:80%;
     object-fit: cover;
-    height: 500px;
+    height: 600px;
     position: relative;
-    margin-bottom: 20px;
+    margin-left: 170px;
+    border-radius: 10px;
 }
 
 .icons_situation {
@@ -17,12 +19,15 @@
 }
 .left {
     position: absolute;
-    color: red;
-    font-size: 50px;
+    color: white;
+    font-size: 100px;
+    top: 240px;
 }
 
 .right {
     position: absolute;
-    color: red;
-    font-size: 50px;
+    color: white;
+    font-size: 100px;
+    right: 5px;
+    top: 240px;
 }
