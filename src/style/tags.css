@@ -23,8 +23,7 @@
 
 .list_tags {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 
 .lodgment_tag {
@@ -38,5 +37,15 @@
     margin-right: 25px;
     border-radius: 5px;
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .tags {
+        margin-left: 0px;
+    }
+
+    .lodgment_tag {
+        margin-right: 10px;
+    }
 }
 
