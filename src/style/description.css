@@ -37,24 +37,15 @@
 }
 
 .collapse_description_log {
-    color: #FF6060;
-   
+    color: #FF6060;   
     border-radius: 10px;
-    margin-top: 0px;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
-    
+    margin-top: 0px;    
 }
 
 .list_description{
     height: 200px;
 }
 
-/* .collapse_description_log_equi {
-    color: #FF6060;
-    background-color: #F6F6F6;
-    margin-top: 0px;
-} */
 .list_equipment{
     margin-top: 0px;    
     height: 200px;
@@ -77,4 +68,8 @@
     padding-left: 10px;
     padding-bottom: 10px;
     background-color: #F6F6F6; 
+}
+
+@media screen and (max-width: 768px) {
+
 }
