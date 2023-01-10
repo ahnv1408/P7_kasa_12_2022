@@ -10,18 +10,12 @@ function Tags({product}) {
                 <h1 className="lodgment_name">{product.title}</h1>
                 <p className="lodgment_location">{product.location}</p>
                 <div className='tag_container'>
-                    {product.tags.map((tag) =>
+                    {product.tags.map((el) =>
                  
-                    <span className='lodgment_tag'>{tag.tags}</span>
+                    <span className='lodgment_tag'>{el.tags}</span>
                     
-                    )}
-                       
-                    
-                </div>
-                
-                
-                
-                
+                    )}                      
+                </div>                        
                 
                  {/* <ul className='list_tags'>
                     <li className="lodgment_tag" key={product.tags}>{product.tags[0]}</li>           

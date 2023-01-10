@@ -1,13 +1,15 @@
 .carousel {
     height: 600px;
     margin-right: 20px;
- 
+    position: relative;
 }
 
 .caroussel_img {
+    position: absolute;
+    background-position: 25%;
     width:1200px;
     object-fit: cover;
-    height: 415px;
+    height: 500px;
     position: relative;
     margin-left: 350px;
     border-radius: 10px;

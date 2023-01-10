@@ -36,11 +36,11 @@ function Description({product}) {
                 </div>
                 <div className="collapse_description_log">
                     <ul className="list_equipment">
-                        {visible && <li className="info_description_log">{product.equipments[0]}</li>}
-                        {visible && <li className="info_description_log">{product.equipments[1]}</li>}
-                        {visible && <li className="info_description_log">{product.equipments[3]}</li>}
-                        {visible && <li className="info_description_log">{product.equipments[4]}</li>}
-                        {visible && <li className="info_description_log">{product.equipments[5]}</li>}
+                        {visible && <li className="info_description_log_equip">{product.equipments[0]}</li>}
+                        {visible && <li className="info_description_log_equip">{product.equipments[1]}</li>}
+                        {visible && <li className="info_description_log_equip">{product.equipments[3]}</li>}
+                        {visible && <li className="info_description_log_equip">{product.equipments[4]}</li>}
+                        {visible && <li className="info_description_log_equip">{product.equipments[5]}</li>}
                     </ul>
                 </div>
             </section>

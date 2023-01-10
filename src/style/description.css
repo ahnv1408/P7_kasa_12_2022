@@ -44,7 +44,6 @@
 
 .list_description{
     height: 200px;
-    padding-top: 10px;
 }
 
 /* .collapse_description_log_equi {
@@ -53,16 +52,25 @@
     margin-top: 0px;
 } */
 .list_equipment{
-    margin-top: 0px;
-    padding-top: 10px;
-    
+    margin-top: 0px;    
     height: 200px;
+    padding-left: 0px;
 }
 
 .info_description_log {
+    height: 100px;
+    margin-top: 0px;
+    padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: #F6F6F6;    
+}
+
+.info_description_log_equip {
     margin-top: 0px;
     padding-top: 10px;
+    padding-left: 10px;
     padding-bottom: 10px;
-    background-color: #F6F6F6;
-    
+    background-color: #F6F6F6; 
 }
