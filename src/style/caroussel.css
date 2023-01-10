@@ -5,11 +5,11 @@
 }
 
 .caroussel_img {
-    width:80%;
+    width:1200px;
     object-fit: cover;
-    height: 600px;
+    height: 550px;
     position: relative;
-    margin-left: 170px;
+    margin-left: 350px;
     border-radius: 10px;
 }
 

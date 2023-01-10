@@ -1,6 +1,5 @@
 import '../style/tags.css';
-import React,{useState, useEffect} from "react";
-import axios from "axios";
+
 
 function Tags({product}) {
     console.log({product});
