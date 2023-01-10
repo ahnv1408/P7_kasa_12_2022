@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import '../style/logement.css';
-import NotFound from '../pages/NotFound'
 import Header from '../components/Header';
 import Tags from "../components/Tags";
 import Rate from "../components/Rate";
@@ -17,7 +16,7 @@ function Logement () {
 
     const { id } = useParams();
     console.log(id);  
-     const product = productsList.find((p) =>  {console.log(":" + p.id); return (":" + p.id) == (id);
+     const product = productsList.find((p) =>  {console.log(":" + p.id); return (":" + p.id) === (id);
     });
 
     console.log(product);

@@ -16,13 +16,6 @@ function Tags({product}) {
                     
                     )}                      
                 </div>                        
-                
-                 {/* <ul className='list_tags'>
-                    <li className="lodgment_tag" key={product.tags}>{product.tags[0]}</li>           
-                    <li className="lodgment_tag" key={product.tags}>{product.tags[1]}</li>           
-                    <li className="lodgment_tag" key={product.tags}>{product.tags[2]}</li>           
-                    <li className="lodgment_tag" key={product.tags}>{product.tags[3]}</li>           
-                </ul>  */}
               
             </>        
     </div>
@@ -31,4 +24,6 @@ function Tags({product}) {
 }
 
 export default Tags;
+
+ 
 

@@ -15,6 +15,10 @@
     border-radius: 10px;
 }
 
+.title_log {
+    margin-left: 10px;
+}
+
 .icon {
     color: white;
     font-size: 20px;

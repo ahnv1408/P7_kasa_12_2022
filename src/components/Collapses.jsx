@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import up from '../assets/up.webp';
 import '../style/collapses.css';
 
 function Collapses(props) {
@@ -19,8 +18,8 @@ function Collapses(props) {
                 <>
                     <section>
                         <div className="collapse_title" >                                              
-                            <h2 className="title">{info.title}</h2>                                               
-                                                
+                            <h2 className="title">{info.title}</h2>                                            
+                                          
                             <p onClick={display} className="icon" >{visible?<FontAwesomeIcon icon={faChevronUp} />:<FontAwesomeIcon icon={faChevronDown} />}</p>
                              
                         </div>

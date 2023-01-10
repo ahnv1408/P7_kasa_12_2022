@@ -1,15 +1,6 @@
-
-import { ReactComponent as Left} from "./left.svg";
-import { ReactComponent as Right} from "./right.svg";
-// import Carousel from "react-elastic-carousel";
-import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel as _Carousel } from 'react-responsive-carousel';
-import { useParams } from "react-router-dom";
-import React,{useState, useEffect} from "react";
-import axios from "axios";
+import React,{useState} from "react";
 import "../../style/caroussel.css";
-import { Slide } from "react-slideshow-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
