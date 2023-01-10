@@ -5,9 +5,6 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import up from '../assets/up.webp';
 import '../style/collapses.css';
 
-// import down from '../assets/down.webp';
-
-
 function Collapses(props) {
     
     const [ visible, setVisible ] = useState (false);
@@ -36,27 +33,6 @@ function Collapses(props) {
             }
         </div>
     )
-    // return (
-    //     <div className="collapse">
-    //         {
-    //             props.collapseInformation.map((info) => 
-    //             <>
-    //                 <section>
-    //                     <div className="title">                                              
-    //                         <h2>{info.title}</h2>
-                                                  
-    //                             <img className="up" src={up} onClick={display} alt=""/>
-                             
-    //                     </div>
-    //                     <div className="description">
-    //                         {visible && <p>{info.description}</p>}
-    //                     </div>
-    //                 </section>
-    //             </>
-    //             )
-    //         }
-    //     </div>
-    // )
 }
 
 export default Collapses;

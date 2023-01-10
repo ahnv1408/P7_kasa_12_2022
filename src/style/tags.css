@@ -2,7 +2,7 @@
 
 .tags {
     font-family: 'Montserrat', sans-serif;    
-    margin-top: 55px;
+    margin-top: 45px;
     margin-left: 40px;
 }
 
@@ -10,14 +10,14 @@
     color: #FF6060;
     font-weight: 500;
     line-height: 52px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
 }
 
 .lodgment_location {
     color: #FF6060;
     font-weight: 500;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     font-size: 18px;
 }
 

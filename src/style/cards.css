@@ -1,47 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
 
-/* .cards {
-    width: 1670px;
-    background-color: #F6F6F6;
-    display: flex;
-    flex-grow: 3;
-    flex-wrap: wrap;
-    gap: 590px;
-    margin-left: 70px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    border-radius: 10px;
-    justify-content: center;
-}
-
-.article_cards {
-    position: absolute;
-    justify-content: center;  
-
-}
-
-.container_card {
-    border-radius: 10px;
-}
-
-img {
-    position: relative;
-    object-fit: cover;
-    border-radius: 10px;
-    width: 450px;
-    height: 450px;
-}
-
-.layer_cards {
-    position: absolute;
-    color: white;
-    left: 20px;
-    bottom: 20px;
-} */
-
 .cards {
     width: 1670px;
     background-color: #F6F6F6;
@@ -54,7 +12,8 @@ img {
     margin-bottom: 50px;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 100px;
+    padding-left: 40px;
+    padding-right: 60px;
     border-radius: 10px;
     justify-content: center;
 }

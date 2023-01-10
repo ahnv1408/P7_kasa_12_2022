@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Tags from "../components/Tags";
 import Rate from "../components/Rate";
 import Host from "../components/Host";
-import Collapses from "../components/Collapses";
+import Footer from "../components/Footer";
 import Description from "../components/Description";
 import productsList from "../products/products.json";
 import Caroussel from '../components/Caroussel/Caroussel';
@@ -16,21 +16,8 @@ import Caroussel from '../components/Caroussel/Caroussel';
 function Logement () {
 
     const { id } = useParams();
-    console.log(id);
-    // let chaine = id.toString();
-    // console.log(chaine);
-    // let id1 = parseInt(chaine.substring(1, 9));
-
-    // let myFunc = num => Number(num);
-      
-    // var intArr = Array.from(String(id), myFunc);
-    // for (let index = 1; index < intArr.length; index++) {
-    //     const element = intArr[index];
-    //     console.log(element);
-    // }
-   
- 
-    const product = productsList.find((p) =>  {console.log(":" + p.id); return (":" + p.id) == (id);
+    console.log(id);  
+     const product = productsList.find((p) =>  {console.log(":" + p.id); return (":" + p.id) == (id);
     });
 
     console.log(product);
@@ -38,9 +25,8 @@ function Logement () {
 
     return (
         
-        <>         
-         
-       
+        <>     
+          
             <Header />           
              <Caroussel product={product}/>    
             <div className="tags_host_rate">
@@ -55,9 +41,8 @@ function Logement () {
             <div className="description">
                 <Description product={product}/>
             </div>
-
-
-            </>
+            <Footer/>
+        </>
       
     )
 }

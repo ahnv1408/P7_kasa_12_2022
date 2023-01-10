@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/cards.css';
 import Card from './Card';
-// import { Link } from "react-router-dom";
+
 
 function Cards(props) {
     console.log(props.productsList[0].id);
