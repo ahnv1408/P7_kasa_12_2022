@@ -11,21 +11,16 @@ import productsList from "../products/products.json";
 import Caroussel from '../components/Caroussel/Caroussel';
 
 
-
 function Logement () {
-
     const { id } = useParams();
     console.log(id);  
-     const product = productsList.find((p) =>  {console.log(":" + p.id); return (":" + p.id) === (id);
+     const product = productsList.find((p) =>  {return (":" + p.id) === (id);
     });
 
     console.log(product);
 
-
     return (
-        
-        <>     
-          
+        <>    
             <Header />           
              <Caroussel product={product}/>    
             <div className="tags_host_rate">

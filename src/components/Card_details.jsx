@@ -6,9 +6,9 @@ const Card_details = (props) => {
   return (
     <article className='article_cards'>
             
-        <img src={props.product.cover} alt='location'/>
+        <img src={props.product.cover} alt='location' key={props.product.cover}/>
         <div className='layer_cards'>
-            <p className='p_cards'>{props.product.title}</p>
+            <p className='p_cards' key={props.product.title}>{props.product.title}</p>
         </div>
 
     </article> 

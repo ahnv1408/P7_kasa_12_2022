@@ -26,13 +26,15 @@
 
 .collapse_style_des {
     width: 900px;
-    margin-left: 20px;  
+    margin-left: 20px; 
+    margin-bottom: 30px; 
    
 }
 
 .collapse_style_equi {
     width: 900px;
     margin-right: 20px;
+    margin-bottom: 30px;
     
 }
 

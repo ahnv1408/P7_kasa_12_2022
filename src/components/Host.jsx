@@ -2,8 +2,7 @@
 import React from 'react';
 import '../style/host.css';
 
-function Host({product}) {
-   
+function Host({product}) {  
     
     return (
         <>

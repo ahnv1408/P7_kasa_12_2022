@@ -6,7 +6,7 @@ const Card = (props) => {
     console.log(props.product.id);
   return (
     <>
-    <Link to= {`/products:${props.product.id}`}>          
+    <Link to= {`/products:${props.product.id}`} key={props.product}>          
         <Card_details product={props.product}/>
     </Link>               
     </>
