@@ -1,4 +1,3 @@
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import React,{useState} from "react";
 import "../../style/caroussel.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +14,7 @@ export default function Caroussel({product}) {
       <div className="carousel">
       <div
         className="caroussel_img"
-        style={{ backgroundImage: `url(${array[slide]})` }}
+        style={{ backgroundImage: `url(${array[slide]})`}}
       >
         <div className="icons_situation">
           <div>

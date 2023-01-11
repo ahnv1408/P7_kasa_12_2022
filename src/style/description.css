@@ -73,5 +73,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .collapses {
+        width: 700px;
+    }
 
+    .collapse_style_equi {
+        margin-left: 70px;
+    }
+
+    .info_description_log {
+        padding-top: 10px;
+    }
 }
