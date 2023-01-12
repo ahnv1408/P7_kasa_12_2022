@@ -20,12 +20,7 @@ function Collapses(props) {
     return (
 
         <div className="collapse">
-            <div>
-            {                
-               
-                
-            } 
-            </div>
+     
             <div> 
                 {props.product ?         
                 <Collapse prod={props.product}/> :
