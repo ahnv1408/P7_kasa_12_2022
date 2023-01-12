@@ -13,11 +13,11 @@ function Collapse(props) {
     }
     console.log(props.info);
     console.log(props.prod);
-    // console.log(props.equip.equipments);
-    // console.log(props.equip.description);
+    // console.log(props.prod.equipments);
+    // console.log(props.prod.description);
     return (
         <>        
-        {props.info? (<section>
+        {props.info ? (<section>
             <div className="collapse_title" >                                              
                 <h2 className="title">{props.info.title}</h2>                                            
                                                       
@@ -29,8 +29,9 @@ function Collapse(props) {
                 {visible && <p className="info_description">{props.info.description}</p>}
                
             </div>
-        </section>) : (
-
+        </section>)
+         : (
+           
             <>
             <div className="collapses">
         <section className="collapse_style_des">
